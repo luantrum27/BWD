@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+
+}
+
+.wrapper {
+    max-width:1200px;
+    height: 500px;
+    display: block;
+    margin: 100px auto;
+    background-color: #f1f1f1;
+}
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    width: 430px;
+    transition: all linear 0.3s;
+    min-width: 400px;
+    max-width: 450px;
+    
+}
+.toast + .toast {
+    margin-top: 25px;
+}
+.toast__body {
+    flex-grow: 1;
+}
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+
+}
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top:6px;
+    line-height: 1.5;
+}
+.toast__icon {
+    font-size: 24px;
+}
+.toast__close, .toast__icon {
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.toast__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.toast--success {
+    border-color: #47d864; 
+}
+.toast--success .toast__icon {
+    color: #47d864;
+}
+.toast--warning {
+    border-color: #ffc021; 
+}
+.toast--warning .toast__icon {
+    color: #ffc021;
+}
+.toast--error {
+    border-color: #ff623d; 
+}
+.toast--error .toast__icon {
+    color: #ff623d;
+}
+
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px; 
+
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+.btn__wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 300px;
+    transform: translateY(50%);
+}
+.btn {
+    color: #fff;
+    width:200px;
+    height:30px;
+    background-color: #47d864;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--error {
+    background-color: #ff623d;
+}
+
+.btn--error:hover {
+    background-color: rgba(255, 98, 61, 0.8);
+}
+.btn--success:hover {
+    background-color: rgba(71, 216, 100, 0.8);
+
+}
+
+.btn--warning {
+    background-color: #ffc021;
+}
+.btn--warning:hover {
+    background-color: rgba(255, 192, 33, 0.8);
+}

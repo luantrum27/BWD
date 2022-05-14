@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF8DC;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(calc(50vh - 150px));
+}
+.container h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+.container span {
+  margin-top: 25px;
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.container .button-container {
+  display: flex;
+  justify-content: space-around;
+}
+.container .button-container .btn {
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.container .button-container .btn:hover {
+  background-color: #FF99FF;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

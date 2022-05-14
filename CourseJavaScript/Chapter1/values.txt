@@ -1,0 +1,19 @@
+Có 4 cách khai báo trong JS:
+    - Sử dụng var (var x = 5)
+    - Sử dụng let (let y = 6)
+    - Sử dụng const (const z = 7)
+    - Không sử dụng gì .
+* Var:
+    - Scrope: function/locally scoped - globally scoped.
+    - Có tính Hoisting (Dù khai báo ở đâu thì biến đều sẽ được đem lên đầu scope trước khi code được thực hiện).
+* Let:
+    - Scope: block scoped.
+    - Có tính Hoisting.
+    - Chỉ cập nhật biến, không thể tái tạo.
+* Const:
+    - Scope: block scoped.
+    - Có tính Hoisting.
+    - Đối với primitive(gồm string, number, boolean, null, undefined):
+        + Không thể tái tạo khai báo hoặc cập nhật giá trị trước đó của biến.
+    - Đối với reference(gôm object, array, function):
+        + Không thể tái tạo khai báo, chỉ có thể cập nhật các thuộc tính

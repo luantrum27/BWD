@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-courses {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.courseItem {
+    margin: 5px;
+}
+h1 {
+    cursor: pointer;
+}

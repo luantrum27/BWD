@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0634ae970e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="checkbox" name="" id="forgetCMND" hidden>
+    <div class="container">                        
+            <form method="" action="">            
+                <div class="container__left">
+                    <div class="container__left--title">
+                        <h3 style="color: #333;">Thông tin cá nhân</h3>
+                    </div>
+                    <div class="container__left--line">
+                        <div class="line"></div>
+                        <div class="card"><i class="fa fa-address-card"></i></div>
+                    </div>
+                    <div class="container__right--QAcode" id="QAcode">
+                        <div class="col"></div>
+                        <div class="row"></div>
+                        <div class="QRline"></div>
+                    </div>
+                    <div class="container__button btn btn--QR">
+                        Quét mã QR
+                    </div>
+                    <div class="container__left--description">
+                        <label for="forgetCMND"><u>Bạn quên không mang CMND/CCCD?</u></label>
+                    </div>
+
+                </div>
+            </form>
+    </div>
+    <input type="checkbox" name="" id="nextForm" hidden>
+    <div class="wrapper">
+        <label for="forgetCMND" class="btn--previous"><i class="fa fa-chevron-circle-left " aria-hidden="true"></i></label>
+        <form method="" action="">            
+            <div class="container__left">
+                <div class="container__left--title">
+                    <h3 style="color: #333;">Thông tin cá nhân</h3>
+                </div>
+                <div class="container__left--line">
+                    <div class="line"></div>
+                    <div class="card"><i class="fa fa-address-card"></i></div>
+                </div>
+                <div class="form__input">
+                    <div class="form__field">
+                        <input type="text" name="name" class="input--text" placeholder=" " >
+                        <label for="" class="form__label">Họ và tên</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="date" class="input--text">
+                    </div>
+                    <div class="gender">
+                        <label for="">Giới tính:</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Nữ</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" name="" class="input--text" placeholder=" ">
+                        <label for="" class="form__label">Quê quán</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" name="" class="input--text" placeholder=" ">
+                        <label for="" class="form__label">Nơi thường trú</label>
+                    </div>
+                </div>
+                <div class="note">
+                    <p>Lưu ý: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự.</p>
+                </div>
+                <label for="nextForm">
+                    <div class="container__button btn btn--next">
+                        Tiếp theo
+                    </div>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="form__wrapper--diffirent">
+        <label for="nextForm" class="btn--previous"><i class="fa fa-chevron-circle-left " aria-hidden="true"></i></label>
+        <form method="" action="">            
+            <div class="container__left">
+                <div class="container__left--title">
+                    <h3 style="color: #333;">Thông tin cá nhân khác</h3>
+                </div>
+                <div class="container__left--line">
+                    <div class="line"></div>
+                    <div class="card"><i class="fa fa-address-card"></i></div>
+                </div>
+                <div class="form__input">
+                    <div class="form__field">
+                        <input type="number" name="name" class="input--text" placeholder=" " >
+                        <label for="" class="form__label">Số điện thoại</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="number" name="" class="input--text" placeholder=" ">
+                        <label for="" class="form__label">Số thẻ bảo hiểm y tế</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="email" name="" class="input--text" placeholder=" ">
+                        <label for="" class="form__label">Email</label>
+                    </div>
+                </div>
+                <div class="note">
+                    <p>Lưu ý: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự.</p>
+                </div>
+                <input type="submit" value="Xong" id="submit" class="btn btn--next">
+            </div>
+        </form>
+    </div>
+</body>
+<!-- <script src="html5-qrcode.min.js"></script>
+<style>
+  .result{
+    background-color: green;
+    color:#fff;
+    padding:20px;
+  }
+  .row{
+    display:flex;
+  }
+</style>
+<div class="row">
+  <div class="col">
+    <div style="width:500px;" id="reader"></div>
+  </div>
+</div>
+<script type="text/javascript">
+function onScanSuccess(qrCodeMessage) {
+    document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+}
+function onScanError(errorMessage) {
+  //handle scan error
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+    "reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess, onScanError);
+</script> -->
+</html>

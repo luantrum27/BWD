@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Phương Trình Bậc 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-top">
+            <center>
+                <h2>GIẢI PHƯƠNG TRÌNH: ax<sup>2</sup> + bx + c = 0</h2>
+                <h5>Số lần giải: <span class="count"></span></h5>
+            </center>
+        </div>
+        <hr>
+        <div class="wrapper-center">
+            <div class="wrapper-input">
+                <div class="wrapper-label">
+                    <h4>Nhập số a: </h4>
+                    <h4>Nhập số b: </h4>
+                    <h4>Nhập số c: </h4>
+                </div>
+                <div class="wrapper-textfield">
+                    <input type="text" name="a" id="a">
+                    <input type="text" name="b" id="b">
+                    <input type="text" name="c" id="c">
+                </div>
+            </div>
+            <div class="wrapper-submit">
+                <button class="btn-perform">Giải PT</button>
+                <button class="btn-random">Cho số</button>
+            </div>
+            <div class="wrapper-display">
+                <h4><span class="result-text"></span></h4>
+                <div class="result-block">
+                    <center>
+                        <b><i><p class="result result-1">X</p></i></b>
+                        <b><i><p class="result result-2">X</p></i></b>
+                    </center>
+                </div>
+            </div>
+            <div class="wrapper-time">
+                <i><p>Bây giờ là <span class="time"></span></p></i>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

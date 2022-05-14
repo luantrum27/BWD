@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 50px;
+}
+
+h4,
+li {
+  font-family: "Dancing Script", cursive;
+}
+
+h4 {
+  color: chartreuse;
+}
+
+.nav-center {
+  font-size: 24px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 1px #AAA;
+}
+.nav-center a {
+  text-decoration: none;
+}
+.nav-center .nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-center .nav-links li {
+  list-style: none;
+  margin-left: 30px;
+}
+.nav-center .nav-links li a:hover {
+  color: #2cccff;
+  transition: 0.3s;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h2 {
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: 200px;
+  background-color: #000;
+  border-radius: 25px;
+  color: white;
+}
+.container button {
+  margin-top: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  border-color: #AAA;
+  font-size: 16px;
+}
+.container button:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: cyan;
+}
+
+li::after {
+  content: "";
+  color: #2cccff;
+}
+
+/*# sourceMappingURL=style.css.map */

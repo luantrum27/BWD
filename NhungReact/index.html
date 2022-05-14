@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    crossorigin
+    src="https://unpkg.com/react@17/umd/react.development.js"
+></script>
+<script
+    crossorigin
+    src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    // Course-item
+    function CourseItem({
+        title, slug, image_url, video_url
+    }) {
+        return (
+            <div className="courseItem">
+                <h1 className="course-title" onClick={() =>{alert(title)}}>{title}</h1>
+                <h4 className="course-slug">{slug}</h4>
+                <img src={image_url} alt="" className="course-img"/>
+                <video src={video_url} className="course-video"></video>
+            </div>
+        );
+    }
+    
+    function Input({label_title, ...inputProps}) {
+        
+        return (
+            <div>
+                <label htmlFor="">{label_title}</label>
+                <input {...inputProps}  />
+            </div>
+        );
+    }
+    function Button({title}) {
+        return <button>{title}</button>
+    }
+
+    function List({data}) {
+        return (
+            <ul>
+                {data.map((car) => {
+                    return <li>{car}</li>
+                })}
+            </ul>
+        );
+    }
+
+    //App.js
+    function App() {
+
+        const cars = ['BMW', 'AUDI', 'HONDA'];
+
+        return (
+            <div className="wrapper">
+                <Button title="Click me!"></Button>
+                <List 
+                    data={cars}
+                />
+            </div>
+        );
+    }
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);
+
+    </script>
+</body>
+</html>
